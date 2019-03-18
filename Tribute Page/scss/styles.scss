@@ -1,6 +1,7 @@
 $letters: #EFEFEF;
-$letters-type: monospace;
+$letters-type: monospace ;
 $letters-size: 20px;
+$min-width: 275px;
 body{
     background-color: #BD677A;
     text-align: justify;
@@ -25,17 +26,20 @@ body{
     background-color:#EFEFEF ;
    height: 450px;
    width: 100%;
+   min-width: $min-width;
     .container__figure{
         background-color: black;
-        width: 60%;
+        width: 80%;
+        max-width:710px ;
         height: 350px;
         align-self: center;
         margin: auto;
         border-radius: 10px;
        position: relative;
        top: 30px;
+       min-width: $min-width;
       .container__figcaption{
-        
+        min-width: $min-width;
         font-family: $letters-type
       }
 .container__img{
@@ -49,7 +53,9 @@ body{
 }
 
 .article{
-width: 60%;
+    width: 80%;
+    max-width:710px ;
+    min-width: $min-width;
 margin: auto;
     .article__p{
         color: $letters;
@@ -60,7 +66,10 @@ margin: auto;
 }
 
 .footer{
-width: 60%;
+    width: 80%;
+    max-width:710px ;
+   
+    min-width: $min-width;
 margin: auto;
     .footer__p{
         color: $letters;
@@ -68,7 +77,7 @@ margin: auto;
        font-size: $letters-size;
     }
 }
-@media screen and (max-width: 370px) {
+@media screen and (max-width: 650px) {
     .container{
         background-color:#EFEFEF ;
        height: 430px;
