@@ -1,0 +1,92 @@
+body {
+  background-color: #BD677A;
+  text-align: justify; }
+
+.header {
+  text-align: center; }
+  .header .header__h1 {
+    color: #EFEFEF;
+    font-family: monospace; }
+  .header .header__p {
+    margin-top: -20px;
+    color: #EFEFEF;
+    font-family: monospace; }
+
+.container {
+  background-color: #EFEFEF;
+  height: 450px;
+  width: 100%; }
+  .container .container__figure {
+    background-color: black;
+    width: 60%;
+    height: 350px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+    margin: auto;
+    border-radius: 10px;
+    position: relative;
+    top: 30px; }
+    .container .container__figure .container__figcaption {
+      font-family: monospace; }
+    .container .container__figure .container__img {
+      width: 100%;
+      height: 100%;
+      border: 2px solid black; }
+
+.article {
+  width: 60%;
+  margin: auto; }
+  .article .article__p {
+    color: #EFEFEF;
+    font-family: monospace;
+    font-size: 20px; }
+
+.footer {
+  width: 60%;
+  margin: auto; }
+  .footer .footer__p {
+    color: #EFEFEF;
+    font-family: monospace;
+    font-size: 20px; }
+
+@media screen and (max-width: 370px) {
+  .container {
+    background-color: #EFEFEF;
+    height: 430px;
+    width: 100%; }
+    .container .container__figure {
+      background-color: black;
+      width: 100%;
+      height: 350px;
+      -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+      margin: auto;
+      border-radius: 10px;
+      position: relative;
+      top: 0px; }
+      .container .container__figure .container__img {
+        width: 100%;
+        height: 100%;
+        border: 2px solid black; }
+      .container .container__figure .container__figcaption {
+        width: 90%;
+        position: relative;
+        top: 10px;
+        text-align: justify;
+        margin: auto; }
+  .article {
+    width: 90%;
+    margin: auto; }
+    .article .article__p {
+      color: #EFEFEF;
+      font-family: monospace;
+      font-size: 20px; }
+  .footer {
+    width: 90%;
+    margin: auto; }
+    .footer .footer__p {
+      color: #EFEFEF;
+      font-family: monospace;
+      font-size: 11px; } }

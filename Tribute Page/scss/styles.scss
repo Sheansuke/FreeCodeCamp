@@ -1,0 +1,124 @@
+$letters: #EFEFEF;
+$letters-type: monospace;
+$letters-size: 20px;
+body{
+    background-color: #BD677A;
+    text-align: justify;
+}
+
+.header{
+   text-align: center;
+
+   .header__h1{
+    color: $letters;
+    font-family: $letters-type
+   }
+
+   .header__p{
+       margin-top: -20px;
+       color: $letters;
+       font-family: $letters-type
+   }
+}
+
+.container{
+    background-color:#EFEFEF ;
+   height: 450px;
+   width: 100%;
+    .container__figure{
+        background-color: black;
+        width: 60%;
+        height: 350px;
+        align-self: center;
+        margin: auto;
+        border-radius: 10px;
+       position: relative;
+       top: 30px;
+      .container__figcaption{
+        
+        font-family: $letters-type
+      }
+.container__img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+    
+}
+        
+    }
+}
+
+.article{
+width: 60%;
+margin: auto;
+    .article__p{
+        color: $letters;
+       font-family: $letters-type;
+       font-size: $letters-size;
+       
+    }
+}
+
+.footer{
+width: 60%;
+margin: auto;
+    .footer__p{
+        color: $letters;
+       font-family: $letters-type;
+       font-size: $letters-size;
+    }
+}
+@media screen and (max-width: 370px) {
+    .container{
+        background-color:#EFEFEF ;
+       height: 430px;
+       width: 100%;
+        .container__figure{
+            background-color: black;
+            width: 100%;
+            height: 350px;
+            align-self: center;
+            margin: auto;
+            border-radius: 10px;
+           position: relative;
+           top: 0px;
+          
+    .container__img{
+        width: 100%;
+        height: 100%;
+        border: 2px solid black;
+        
+    }
+    .container__figcaption{
+        width: 90%;
+        
+        position: relative;
+        top: 10px;
+        text-align: justify;
+        margin: auto;
+    }
+            
+        }
+    }  
+
+    .article{
+        width: 90%;
+        margin: auto;
+            .article__p{
+                color: $letters;
+               font-family: $letters-type;
+               font-size: $letters-size;
+               
+            }
+        }
+        
+        .footer{
+        width: 90%;
+        margin: auto;
+            .footer__p{
+                color: $letters;
+               font-family: $letters-type;
+               font-size: 11px ;
+            }
+        }
+}
