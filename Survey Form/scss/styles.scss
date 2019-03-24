@@ -1,133 +1,192 @@
-$letters: #EFEFEF;
-$letters-type: monospace ;
-$letters-size: 20px;
-$min-width: 275px;
+//Variable to general color and stlye text 
+$text-color: #FFFFFF;
+$font-style:quicksand;
 body{
-    background-color: #BD677A;
-    text-align: justify;
+    background-color: #055763;
+   
 }
 
-.header{
-   text-align: center;
 
-   .header__h1{
-    color: $letters;
-    font-family: $letters-type
-   }
-
-   .header__p{
-       margin-top: -20px;
-       color: $letters;
-       font-family: $letters-type
-   }
+//H1 out to container
+.h1{
+    margin: auto;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 50px;
+    color: $text-color;
+    font-family: $font-style;
 }
 
+
+//container all items
 .container{
-    background-color:#EFEFEF ;
-   height: 450px;
-   width: 100%;
-   min-width: $min-width;
-    .container__figure{
-        background-color: black;
-        width: 80%;
-        max-width:710px ;
-        height: 350px;
-        align-self: center;
-        margin: auto;
-        border-radius: 10px;
-       position: relative;
-       top: 30px;
-       min-width: $min-width;
-      .container__figcaption{
-        min-width: $min-width;
-        font-family: $letters-type
+    background-color:#088FA3 ;
+    border-radius: 5px;
+    border: 1px solid #088FA3;
+  width: 70%;
+  min-width: 340px;
+  margin: auto;
+  margin-top: 30px;
+ 
+  @media screen and (max-width: 500px) {
+    width: 90%;
+    
+    
+  }
+  .container__p{
+    color: $text-color;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    font-family: $font-style;
+    background-color: #088FA3;
+  }
+
+
+// Aling all items to center form
+  form{
+    text-align: center;
+    
+//Container to all inputs and labels individually
+  .labelsinputs__container{
+      margin:auto;
+     
+      
+    }
+
+
+//parameters to all labels container
+  .form__labels{
+    text-align:right;
+    width: 40%;
+    padding: 5px;
+    vertical-align: top;
+    margin-top: 10px;
+    font-family: $font-style;
+    font-size: 20px;
+    color: $text-color;
+    display: inline-block;
+    @media screen and (max-width: 500px) {
+      width: 100%;
+      text-align:left;
+    }
+    }
+
+
+// Parameters to all inputs container 
+  .form__inputs{
+        display: inline-block;
+        width: 48%;
+        text-align: left;
+        vertical-align: middle;
+       
+        @media screen and (max-width: 500px) {
+          width: 100%;
+          
+        }
+    }
+
+  
+//Parameters to all inputsfields 
+  .form__inputsfield{
+    
+    width: 90%;
+    max-width: 300px;
+    padding: 5px;
+    margin: 10px;
+    border: 2px solid #c0c0c0;
+    border-radius: 2px;
+    height: 20px;
+    transition-duration: 0.2s;
+    &:focus{
+      outline-color: #0CD2F0;
+      outline-style: solid;
+      outline-width: 2px;
+    }
+    
+    }
+
+
+   
+  .form__dropdown{
+     padding: 7px;
+     margin-top: 20px;
+     margin-left: 10px;
+     border: 1px solid #c0c0c0;
+     border-radius: 2px;
+    
+     
+     
+    }
+    
+
+
+  .form__dropdown--FCC{
+     margin-top:15px ;
+    }
+
+
+//Parameters to radio and chekbox list   
+  .form__ul{
+     list-style: none;
+     margin-left: -32px;
+      .form__li{
+         color: $text-color;
+         font-size: 17px;
+        
       }
-.container__img{
-    width: 100%;
-    height: 100%;
-    border: 2px solid black;
+    }
+
+
+    
+  .form__textarea{
+     margin-top: 17px;
+     resize: vertical;
+     width:100% ;
+     max-width: 300px;
+     max-height: 100px;
+     border-radius: 5px;
+     @media screen and (max-width: 500px) {
+    
+    width:95%;
+    margin-left: 10px;
+    }
+    }
+  }
+  
+  
+//container to ajust button
+  .container-button{
+    
+     height: 70px;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+  
+  
+  
+    .container-button__button{
+      background-color: #0CD2F0;
+      color: $text-color;
+      display:block;
+      border-radius: 5px;
+      border: 0px solid  #0CD2F0;
+      opacity: 0.7;
+  
+     width: 100px;
+     height: 50px;
+     
+  font-size: 18px;
+  transition-duration: 0.5s;
+  &:hover{
+    opacity: 1;
+    cursor: pointer;
+  }
+  
+    }
+  }
     
 }
-        
-    }
-}
 
-.article{
-    width: 80%;
-    max-width:710px ;
-    min-width: $min-width;
-margin: auto;
-    .article__p{
-        color: $letters;
-       font-family: $letters-type;
-       font-size: $letters-size;
-       
-    }
-}
 
-.footer{
-    width: 80%;
-    max-width:710px ;
-   
-    min-width: $min-width;
-margin: auto;
-    .footer__p{
-        color: $letters;
-       font-family: $letters-type;
-       font-size: $letters-size;
-    }
-}
-@media screen and (max-width: 650px) {
-    .container{
-        background-color:#EFEFEF ;
-       height: 430px;
-       width: 100%;
-        .container__figure{
-            background-color: black;
-            width: 100%;
-            height: 350px;
-            align-self: center;
-            margin: auto;
-            border-radius: 10px;
-           position: relative;
-           top: 0px;
-          
-    .container__img{
-        width: 100%;
-        height: 100%;
-        border: 2px solid black;
-        
-    }
-    .container__figcaption{
-        width: 90%;
-        
-        position: relative;
-        top: 10px;
-        text-align: justify;
-        margin: auto;
-    }
-            
-        }
-    }  
 
-    .article{
-        width: 90%;
-        margin: auto;
-            .article__p{
-                color: $letters;
-               font-family: $letters-type;
-               font-size: $letters-size;
-               
-            }
-        }
-        
-        .footer{
-        width: 90%;
-        margin: auto;
-            .footer__p{
-                color: $letters;
-               font-family: $letters-type;
-               font-size: 11px ;
-            }
-        }
-}

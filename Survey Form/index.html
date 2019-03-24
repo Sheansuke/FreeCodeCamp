@@ -6,45 +6,152 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Tribute Page</title>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <title>Survey Form</title>
 </head>
 <body>
- <Header class="header">
-     <h1 class="header__h1">Code Esencia</h1>
-     <p class="header__p">[La benevolente emperatriz blanca de Nasod]</p>
- </Header>
+    <h1 class="h1">Survey Form</h1>
+<div class="container">
+    <p class="container__p">Let us know how we can improve freeCodeCamp</p>
+<form action="" class="container__form">
 
- <div class="container">
+    <!-- NAME CONTAINER -->
+    <div class="labelsinputs__container">
+            <div class="form__labels">
+                <label for="name">*Name: </label>
+                </div>
+                        
+                <div class="form__inputs">
+                    <input type="text" name="name" id="name" class="form__inputsfield" placeholder="Your Name" required>
+                </div>
+        </div>
+<!-- EMAIL CONTAINER  -->
+<div class="labelsinputs__container">
+        <div class="form__labels">
+            <label for="email">*Email: </label>
+            </div>
+                    
+            <div class="form__inputs">
+                <input type="email" name="email" id="email" class="form__inputsfield" placeholder="Example@example.com" required>
+            </div>
+    </div>
+<!-- AGE CONTAINER -->
+<div class="labelsinputs__container">
+        <div class="form__labels">
+            <label for="age">*Age: </label>
+            </div>
+                    
+            <div class="form__inputs">
+                <input type="number" min="0" max="50" name="age" id="age" class="form__inputsfield" placeholder="Your Age" required>
+            </div>
+    </div>
 
-<figure class="container__figure">
-    <img src="Boceto Tribute Page/Code Esencia.jpg" alt="" class="container__img">
-    <figcaption class="container__figcaption">Un mundo donde todos los Nasod coexisten pacíficamente con otros, creo que ese es el
-        objetivo del nuevo Reino de Nasod.</figcaption>
-</figure>
+<!-- DROPDOWN ROLE -->
+<div class="labelsinputs__container">
+        <div class="form__labels">
+            <label for="dropdown">Which option best describes 
+                    your current role? </label>
+            </div>
+                    
+            <div class="form__inputs">
+                <select name="dropdown" id="dropdown" class="form__dropdown">
+                    <option disabled value>Select an option</option>
+                    <option value="Student">Student</option>
+                    <option value="job">Full Time Job</option>
+                    <option value="learner">Full Time Learner</option>
+                </select>
+            </div>
+    </div>
 
- </div>
 
- <article class="article">
-     <p class="article__p">
-        Eva es la Emperatriz Blanca Benevolente de Nasod, al mando de su leal invocación de Nasod, guiándolos a la batalla.
+<!-- RADIO -->
+<div class="labelsinputs__container">
+        <div class="form__labels">
+            <label for="radio">How likely is thay you would 
+                    recomended freeCodeCamp 
+                    to a friend? </label>
+            </div>
+                    
+            <div class="form__inputs">
+                <ul class="form__ul">
+                    <li class="form__li"><input type="radio" name="recomended" id="radio" class="form__radio"> Definitely</li>
+                    <li class="form__li"><input type="radio" name="recomended" id="radio" class="form__radio"> Maybe</li>
+                    <li class="form__li"><input type="radio" name="recomended" id="radio" class="form__radio"> Not sure</li>
+            
+    </div>
 
-        Mientras viajaba con El Search Party, Eve conoció a muchos seres diferentes en Elrios. A diferencia de antes, cuando su único objetivo era reconstruir los Nasods, su perspectiva se expande a medida que se hace amiga de El Search Party y de otras personas que conoce en el camino.
-        
-        Cuando llega a Elysion, un área con solo Nasods, para Nasods, comienza a preguntarse si eso es lo que realmente deseaba al reconstruir el Reino de Nasod.
-        
-        Un lugar solo para los Nasods ... ¿Es esto realmente lo que quiero? El método de Adrián no está mal ... pero Elysion no es mi forma ideal del Reino Nasod.
-        
-        Al confiar en la "amistad" y la "creencia" de sus amigos, Eve persigue un nuevo objetivo.
-        
-          
-     </p>
- </article>
+<!-- DROPDOWN FCC -->
+<div class="labelsinputs__container">
+        <div class="form__labels">
+            <label for="dropdown2">What do you like most in FCC: </label>
+            </div>
+                    
+            <div class="form__inputs">
+                <select name="dropdown2" id="dropdown2" class="form__dropdown form__dropdown--FCC">
+                    <option disabled selected value >Select an option</option>
+                    <option value="Challenges">Challenges</option>
+                    <option value="Projects">Projects</option>
+                    <option value="Open Source">Open Source</option>
+                </select>
+            </div>
+    </div>
 
- <footer class="footer">
-     <p class="footer__p">
-        "Quiero construir un reino, en el que podamos coexistir juntos. 
-        Después de todo, somos ... amigos, ¿correcto?"   
-     </p>
- </footer>
+
+<!-- CHECKBOX -->
+<div class="labelsinputs__container">
+        <div class="form__labels">
+            <label for="checkbox">Things that should be improved 
+                    in the future</label>
+            </div>
+                    
+            <div class="form__inputs">
+                <ul class="form__ul form__ul--checkbox">
+                    <li class="form__li"><input type="checkbox" name="future" id="checkbox" class="form__checkbox"> Front-End Projects</li>
+                    <li class="form__li"><input type="checkbox" name="future" id="checkbox" class="form__checkbox"> Back-End Projects</li>
+                    <li class="form__li"><input type="checkbox" name="future" id="checkbox" class="form__checkbox"> Data Visualization</li>
+                    <li class="form__li"><input type="checkbox" name="future" id="checkbox" class="form__checkbox"> Challenges</li>
+                    <li class="form__li"><input type="checkbox" name="future" id="checkbox" class="form__checkbox"> Open Source Community</li>
+                    <li class="form__li"><input type="checkbox" name="future" id="checkbox" class="form__checkbox"> Gitter help rooms</li>
+                    <li class="form__li"><input type="checkbox" name="future" id="checkbox" class="form__checkbox"> Videos</li>
+                    <li class="form__li"><input type="checkbox" name="future" id="checkbox" class="form__checkbox"> City Meetups</li>
+                    <li class="form__li"><input type="checkbox" name="future" id="checkbox" class="form__checkbox"> Wiki</li>
+                    <li class="form__li"><input type="checkbox" name="future" id="checkbox" class="form__checkbox"> Forumcheckbox</li>
+    </div>
+
+<!-- COMMENTS -->
+<div class="labelsinputs__container">
+        <div class="form__labels">
+            <label for="comments">Any comments or suggestions?: </label>
+            </div>
+                    
+            <div class="form__inputs">
+                <textarea name="textarea" class="form__textarea" id="textarea" cols="40" rows="7" ></textarea>
+
+    </div>
+
+<div class="container-button">
+    <button type="submit" class="container-button__button">Sumit</button>
+</div>
+</form>
+
+
+
+
+
+
+</div><!-- DIV CONTAINER -->
+
+
+
+
+</div>
+
+
+
+
+
+</form>
+
+<div class="elai"></div>
 </body>
 </html>
