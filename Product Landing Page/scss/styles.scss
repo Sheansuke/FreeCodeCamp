@@ -1,0 +1,577 @@
+
+
+//VARIABLES
+$text-color: #91BEAE;
+
+//MIXINS
+@mixin margins {
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 300px;
+}
+
+//BODY
+body{
+   
+    
+    background-color:#424242 ;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: 0fr 1.4fr 0.1fr ;
+    grid-template-areas: 
+"header"
+"main"
+"footer"
+    ;
+    
+}
+
+//PRINCIPAL HEADER
+.header{
+    
+width: 100%;
+@include margins();
+//NAV PRINCIPAL HEADER
+    .nav{
+    
+   
+    
+    
+    
+        .nav__ul{
+            
+            display: flex;
+            flex-wrap: wrap;
+            display: inline-block;
+            background-color: #424242;
+            width: 100%;
+        }
+        
+//IMG AND LI PHONESSHOP CONTAINER
+        .span__li--phonesshop{
+            
+            float: left;
+            margin-left: -30px;
+        }
+
+        .nav__li--phonesshop{
+            display: inline-block;
+            
+            
+            font-size: 40px ;
+    
+            .nav__img{
+                width:40px ;
+                height:48px ;
+            }
+        }
+
+//FEACTURE, VIDEO, PLANS LI CONTAINER
+      .span__li{
+        
+        float: right;
+        margin-right: 10px;
+      }
+        .nav__li--normal{
+            display: inline-block;
+           
+            margin-top: 30px;
+            font-size: 20px;
+            margin-right: 54.7px;
+           
+    
+        }
+    
+        .a{
+           
+            color: $text-color;
+            text-decoration: none;
+            
+        }
+    } 
+    
+}
+
+
+   
+   
+ //MAIN BEGIND  
+.main{
+  
+}
+
+
+//HEADER, QUALITY,FAST,PERFECT
+    .article__header{
+        @include margins();
+        margin-top: 5px;
+        
+        width: 300px ;
+        height:120px ;
+        text-align: center;
+        .article__header-h1{
+            margin-top: -5px;
+            
+            color: $text-color;
+        }
+
+        .article__header-form{
+            
+        }
+
+        .article__header-input{
+            text-align: center;
+            display: block;
+            margin-top: -13px;
+            @include margins();
+            min-width: 200px;
+            border: 1px solid #424242;
+            border-radius: 5px;
+        }
+
+        .article__header-button{
+            margin-top: 10px;
+            width: 130px;
+            height: 30px;
+            color: $text-color;
+            background-color:#104A57 ;
+            border: 1px solid #91BEAE;
+            border-radius: 5px;
+        }
+    }
+//sections imgs
+.div__section-img{
+    width: 100px;
+    height: 110px;
+    margin-top: 20px;
+    margin-right: 20px;
+    float: left;
+}
+
+
+//SECTION FEACTURE
+.article__section-feacture{
+    
+    color: $text-color;
+    width: 60% ;
+    height: 500px;
+    @include margins();
+    margin-top: 30px;
+    
+    .div__section-feacture{
+       
+        width: 90% ;
+        @include margins();
+        margin-top: 10px;
+        height: 150px;
+
+    }
+    
+}
+
+//SECTION VIDEO
+.article__section-video{
+    border: 1px solid #91BEAE ;  
+    
+    
+    width: 70%;
+    max-width: 620px;
+   
+    height: 350px;
+    
+    @include margins();
+    margin-top: 95px;
+
+    iframe{
+        width: 100%;
+  height: 100%;
+ 
+    
+    
+    }
+ 
+}
+
+//SECTION PLANS
+.article__section-plans{
+    display: flex;
+  
+    color: $text-color;
+    width: 90% ;
+    height: 350px;
+    @include margins();
+    margin-top: 95px;
+    max-width: 1100px;
+
+    .div__plans{
+        
+        border: 1px solid #91BEAE ;  
+        width: 32.7% ;
+    height: 100%;
+    margin-left: 5px;
+    text-align: center;
+    .div__plans-div{
+        background-color: #707070;
+        width: 100%;
+        height: 50px;
+        font-size: 30px;
+        
+        
+    }
+
+    .div__plans-p{
+           font-size: 20px;
+           margin-top: 20px;
+           width: 100%;
+           height: 200px;
+         margin-left: auto;
+         margin-right: auto;
+
+    & span{
+display: block;
+margin-top: 20px;
+         }
+    }
+
+    .div__plans-button{
+    background-color:#FFCD55 ;
+    border: 1px solid #FFCD55 ;
+    border-radius: 5px;
+    width: 130px;
+    height:40px ;
+    margin-bottom: auto;
+
+    
+    
+    }
+
+    }
+}
+
+
+
+
+
+//FOOTER
+.footer{
+    
+    background-color:#707070 ;
+    margin-top: 50px;
+    width: 100%;
+    height: 50px;
+    margin-right: -1px;
+    
+text-align: right;
+    .nav__footer{
+
+
+       .nav__footer-ul{
+           
+          margin-top: 0px;
+        margin-bottom: 0px;
+
+        .nav__footer-li{
+            display: inline-block;
+
+            .a{
+                text-decoration: none;
+                color: $text-color;
+                font-size: 15px;
+
+            }
+        }
+       }
+    }
+
+    .footer__p{
+        
+        color: $text-color;
+                font-size: 15px;
+                margin-top: -10px;
+                display: inline-block;
+             
+    }
+}
+
+
+
+
+
+//QUERY---------------------------------------------------------------------------------------
+@media (max-width: 640px){
+    
+//PRINCIPAL HEADER
+.header{
+    
+    
+    @include margins();
+    //NAV PRINCIPAL HEADER
+        .nav{
+        
+        
+        @include margins();
+            text-align: center;
+        
+            .nav__ul{
+                display: inline-block;
+                
+                width: 50%;
+                background-color: #424242;
+               margin-left: 20px;
+              
+                min-width: 270px;
+                
+            }
+            
+    //IMG AND LI PHONESSHOP CONTAINER
+            .span__li--phonesshop{
+                width: 50%;
+                float: none;
+                margin-left: -70px;
+                
+            }
+    
+            .nav__li--phonesshop{
+               margin-left: auto;
+               margin-right: auto;
+               min-width: 300px;
+                
+                font-size: 40px ;
+        
+                .nav__img{
+                    width:40px ;
+                    height:48px ;
+                    margin-right: 40px;
+                   
+                }
+            }
+    
+    //FEACTURE, VIDEO, PLANS LI CONTAINER
+          .span__li{
+            text-align: center;
+           
+           display: inline-block;
+           
+           width: 100%;
+              
+          }
+            .nav__li--normal{
+               
+               margin-left: 0px;
+               
+                margin-top: 30px;
+                font-size: 20px;
+               
+               
+        
+            }
+        
+            .a{
+               margin-left: -40px;
+                color: $text-color;
+                text-decoration: none;
+                
+            }
+        } 
+        
+    }
+    
+    
+       
+       
+   
+    
+    //HEADER, QUALITY,FAST,PERFECT
+        .article__header{
+            @include margins();
+            margin-top: 50px;
+            
+            width: 300px ;
+            height:120px ;
+            text-align: center;
+            .article__header-h1{
+                margin-top: -5px;
+                
+                color: $text-color;
+            }
+    
+            .article__header-form{
+                
+            }
+    
+            .article__header-input{
+                text-align: center;
+                display: block;
+                margin-top: -13px;
+                @include margins();
+                min-width: 200px;
+                border: 1px solid #424242;
+                border-radius: 5px;
+            }
+    
+            .article__header-button{
+                margin-top: 10px;
+                width: 130px;
+                height: 30px;
+                color: $text-color;
+                background-color:#104A57 ;
+                border: 1px solid #91BEAE;
+                border-radius: 5px;
+            }
+        }
+    //sections imgs
+    .div__section-img{
+        width: 100px;
+        height: 120px;
+        margin-top: 20px;
+        margin-right: 20px;
+        float: left;
+    }
+    
+    
+    //SECTION FEACTURE
+    .article__section-feacture{
+         
+        color: $text-color;
+        width: 95% ;
+        height: 500px;
+        @include margins();
+        margin-top: 100px;
+        
+        .div__section-feacture{
+           
+            width: 90% ;
+            @include margins();
+            margin-top: 10px;
+            height: 150px;
+    
+        }
+        
+    }
+    
+    //SECTION VIDEO
+    .article__section-video{
+        border: 1px solid #91BEAE ;  
+        
+        
+        width: 90%;
+        max-width: 620px;
+       
+        height: 350px;
+        
+        @include margins();
+        margin-top: 95px;
+    
+        iframe{
+            width: 100%;
+      height: 100%;
+     
+        
+        
+        }
+     
+    }
+    
+    //SECTION PLANS
+    .article__section-plans{
+        display: flex;
+        flex-wrap: wrap;
+     
+        color: $text-color;
+        width: 95% ;
+       height: 0%;
+        @include margins();
+        margin-top: 95px;
+        
+    
+        .div__plans{
+            margin-top: 30px;
+            border: 1px solid #91BEAE ;  
+            width: 100% ;
+        
+        margin-left: 5px;
+        text-align: center;
+        .div__plans-div{
+            background-color: #707070;
+            width: 100%;
+            
+            height: 50px;
+            font-size: 30px;
+            
+            
+        }
+    
+        .div__plans-p{
+               font-size: 20px;
+               margin-top: 20px;
+               width: 100%;
+               height: 200px;
+             margin-left: auto;
+             margin-right: auto;
+    
+        & span{
+    display: block;
+    margin-top: 40px;
+             }
+        }
+    
+        .div__plans-button{
+        background-color:#FFCD55 ;
+        border: 1px solid #FFCD55 ;
+        border-radius: 5px;
+        width: 130px;
+        height:40px ;
+        margin-bottom: 30px;
+    
+        
+        
+        }
+    
+        }
+    }
+    
+    
+    
+    
+    
+    //FOOTER
+    .footer{
+       
+        background-color:#707070 ;
+        margin-top: 50px;
+        width: 99%;
+        height: 50px;
+        margin-right: -1px;
+        
+    text-align: right;
+        .nav__footer{
+          
+    
+           .nav__footer-ul{
+               
+              margin-top: 0px;
+            margin-bottom: 0px;
+    
+            .nav__footer-li{
+                display: inline-block;
+    
+                .a{
+                    text-decoration: none;
+                    color: $text-color;
+                    font-size: 15px;
+    
+                }
+            }
+           }
+        }
+    
+        .footer__p{
+            
+            color: $text-color;
+                    font-size: 15px;
+                    margin-top: -10px;
+                    display: inline-block;
+                 
+        }
+    }
+}
