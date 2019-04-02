@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+
+//FONT-FAMILY VARIABLES---------------------------------------------------
+/*JS DOCUMENTATION and H2 TITLES*/ $ubuntu-bold: ubuntu-bold;
+/*NAV ITEMS*/ $ubuntu: ubuntu;
+/*P INFORMATION*/ $ubuntu-light:ubuntu-light;
+
+//FONT-SIZE VARIABLES---------------------------------------------------
+/* JSDOCUMENTATION SIZE */ $jsdocumentationsize: 35px;
+/* H2 SIZE */ $h2size: 30px;
+/* NAVITEM SIZE */ $navitemsize: 25px;
+/* P INFORMATION SIZE*/ $pinformationsize: 20px;
+
+//TEXT COLOR-----------------------------------------------------------------
+/*GENERAL TEXT COLOR*/ $textcolor:#707070;
+
+
+//NAVBAR---------------------------------------------------------
+.container-nav {
+  
+  position: fixed;
+  
+  top: 0px;
+  left: 0px;
+  background-color: #EEEEEE;
+  width: 400px;
+  height: 900px;
+  text-align: center;
+  overflow-y: auto;
+  z-index: 999;
+  
+  .h1{
+    color: #474747;
+    font-family: $ubuntu-bold;
+    font-size: $jsdocumentationsize ;
+
+    
+  }
+
+
+  .nav{
+    width: 100%;.nav__ul{
+      list-style: none;
+      
+      
+    }
+  
+    .nav__li{
+      
+      border: 3px solid #F18682;
+      position: relative;
+      left: -40px;
+      width: 100%;
+      padding: 17px;
+      z-index: 1;
+    
+      &:hover{
+        ::after{
+          position: absolute;
+          top: 0px;
+          $left:0px;
+          left:$left;
+          z-index: 1000;
+        content: " ";
+        background-image:radial-gradient(rgba(241, 134, 130, 0.178),rgba(241, 134, 130, 0.158),rgba(241, 134, 130, 0.103));
+        height: 100%;
+        width: 0;
+        animation: flash 0.5s 1;
+        animation-timing-function: cubic-bezier(0.175, 0.275, 0.3165, 1);
+        animation-fill-mode: forwards;
+
+        }  
+      }
+      
+    }
+       
+  
+  
+    .nav__a{
+      
+      color: $textcolor;
+      font-size: $navitemsize;
+      font-family: $ubuntu;
+      text-decoration: none;
+      transition-duration: 0.2s;
+      &:hover{
+        color:#1992ca ;
+
+       
+       
+    }
+    
+  }
+
+  
+
+}
+
+//ANIMATION
+
+@keyframes flash{
+  0%{width:0%;}
+  100%{width: 100%;}
+  
+}
+}
+
+p{
+  color:#707070;
+  font-family: $ubuntu-light;
+  font-size: $pinformationsize ;
+  width: 100%;
+}
+
+li{
+  color:#707070;
+  font-family: $ubuntu-light;
+  font-size: $pinformationsize ;
+}
+
+h2{
+  color:#474747;
+  font-family: $ubuntu-bold;
+  font-size: $h2size ;
+  
+}
+
+
+//INFORMATION--------------------------------------------------------------
+
+article{
+  border: 1px solid green;
+ 
+  
+ 
+  
+  max-width: 855px;
+ 
+  position: absolute;
+  top: 0px;
+  left:400px ;
+  z-index: 0;
+ transition-duration: 0.5s;
+}
+
+section{
+text-align: left;
+  transition-duration: 0.5s;
+width: 90%;
+height: 900px;
+border: 1px solid green;
+margin-left: 5px;
+overflow-y: scroll;
+}
+
+.li-2 a:checked{
+.section2{
+  top: -30px;
+}
+}
+
+span{
+  background-color: rgba(128, 128, 128, 0.226);
+ padding: 5px;
+ width: 100%;
+}
+
+
+//AJUST--------------------------------------------------------------------------------------------
+
+@media (max-width:922px){
+
+  .container-nav {
+  position: relative;
+    
+    top: 0px;
+    left: 0px;
+    background-color: #EEEEEE;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    overflow-y: auto;
+    z-index: 999;
+    
+    .h1{
+      color: #474747;
+      font-family: $ubuntu-bold;
+      font-size: $jsdocumentationsize ;
+  
+      
+    }
+  
+  
+    .nav{
+      width: 100%;.nav__ul{
+        list-style: none;
+        
+        
+      }
+    
+      .nav__li{
+        
+        border: 3px solid #F18682;
+        position: relative;
+        left: -40px;
+        width: 100%;
+        padding: 17px;
+        z-index: 1;
+      
+        &:hover{
+          ::after{
+            position: absolute;
+            top: 0px;
+            $left:0px;
+            left:$left;
+            z-index: 1000;
+          content: " ";
+          background-image:radial-gradient(rgba(241, 134, 130, 0.178),rgba(241, 134, 130, 0.158),rgba(241, 134, 130, 0.103));
+          height: 100%;
+          width: 0;
+          animation: flash 0.5s 1;
+          animation-timing-function: cubic-bezier(0.175, 0.275, 0.3165, 1);
+          animation-fill-mode: forwards;
+  
+          }  
+        }
+        
+      }
+         
+    
+    
+      .nav__a{
+        
+        color: $textcolor;
+        font-size: $navitemsize;
+        font-family: $ubuntu;
+        text-decoration: none;
+        transition-duration: 0.2s;
+        &:hover{
+          color:#1992ca ;
+  
+         
+         
+      }
+      
+    }
+  
+    
+  
+  }
+  
+  //ANIMATION
+  
+  @keyframes flash{
+    0%{width:0%;}
+    100%{width: 100%;}
+    
+  }
+  }
+  
+  p{
+    color:#707070;
+    font-family: $ubuntu-light;
+    font-size: $pinformationsize ;
+    width: 100%;
+  }
+  
+  li{
+    color:#707070;
+    font-family: $ubuntu-light;
+    font-size: $pinformationsize ;
+  }
+  
+  h2{
+    color:#474747;
+    font-family: $ubuntu-bold;
+    font-size: $h2size ;
+    
+  }
+  
+  
+  //INFORMATION--------------------------------------------------------------
+ 
+  article{
+    border: 1px solid green;
+   
+   
+    
+    width: 100%;
+   
+   
+    top: 300px;
+    left:0px ;
+    z-index: 0;
+   transition-duration: 0.5s;
+  }
+  
+  section{
+    
+  text-align: left;
+    transition-duration: 0.5s;
+    width: 100%;
+  height: 900px;
+  border: 1px solid green;
+  margin-left: 5px;
+  
+  }
+  
+  .li-2 a:checked{
+  .section2{
+    top: -30px;
+  }
+  }
+  
+  span{
+    background-color: rgba(128, 128, 128, 0.226);
+   padding: 5px;
+   width: 100%;
+  }
+  
+}
