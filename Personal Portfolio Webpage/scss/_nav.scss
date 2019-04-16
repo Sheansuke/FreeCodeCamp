@@ -1,0 +1,30 @@
+$letter:"Raleway, sans-serif";
+.nav{
+background-color: #141F28;
+width: 100%;
+display: flex;
+justify-content: flex-end;
+opacity: 0.5;
+
+.nav__ul{
+    
+    
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+  
+    .nav__li{
+        margin-top: 10px;
+        padding: 10px;
+    }
+    .nav__li a{
+        color: white;
+        font-family: $letter;
+        margin-right: 20px;
+        color: rgb(182, 209, 218);
+        font-size: 25px;
+       
+    }
+}
+}
+
