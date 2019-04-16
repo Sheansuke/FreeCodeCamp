@@ -1,0 +1,217 @@
+@import url("https://fonts.googleapis.com/css?family=Ubuntu");
+/*JS DOCUMENTATION and H2 TITLES*/
+/*NAV ITEMS*/
+/*P INFORMATION*/
+/* JSDOCUMENTATION SIZE */
+/* H2 SIZE */
+/* NAVITEM SIZE */
+/* P INFORMATION SIZE*/
+/*GENERAL TEXT COLOR*/
+/**/
+.container-nav {
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  background-color: #EEEEEE;
+  width: 400px;
+  height: 900px;
+  text-align: center;
+  overflow-y: auto;
+  z-index: 999; }
+  .container-nav .h1 {
+    color: #474747;
+    font-family: ubuntu-bold;
+    font-size: 35px; }
+  .container-nav .nav {
+    width: 100%; }
+    .container-nav .nav .nav__ul {
+      list-style: none; }
+    .container-nav .nav .nav__li {
+      border: 3px solid #F18682;
+      position: relative;
+      left: -40px;
+      width: 100%;
+      padding: 17px;
+      z-index: 1; }
+      .container-nav .nav .nav__li:hover ::after {
+        position: absolute;
+        top: 0px;
+        left: 0px;
+        z-index: 1000;
+        content: " ";
+        background-image: -webkit-radial-gradient(rgba(241, 134, 130, 0.178), rgba(241, 134, 130, 0.158), rgba(241, 134, 130, 0.103));
+        background-image: -o-radial-gradient(rgba(241, 134, 130, 0.178), rgba(241, 134, 130, 0.158), rgba(241, 134, 130, 0.103));
+        background-image: radial-gradient(rgba(241, 134, 130, 0.178), rgba(241, 134, 130, 0.158), rgba(241, 134, 130, 0.103));
+        height: 100%;
+        width: 0;
+        -webkit-animation: flash 0.5s 1;
+        animation: flash 0.5s 1;
+        -webkit-animation-timing-function: cubic-bezier(0.175, 0.275, 0.3165, 1);
+        animation-timing-function: cubic-bezier(0.175, 0.275, 0.3165, 1);
+        -webkit-animation-fill-mode: forwards;
+        animation-fill-mode: forwards; }
+    .container-nav .nav .nav__a {
+      color: #707070;
+      font-size: 25px;
+      font-family: ubuntu;
+      text-decoration: none;
+      -webkit-transition-duration: 0.2s;
+      -o-transition-duration: 0.2s;
+      transition-duration: 0.2s; }
+      .container-nav .nav .nav__a:hover {
+        color: #1992ca; }
+
+@-webkit-keyframes flash {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
+
+@keyframes flash {
+  0% {
+    width: 0%; }
+  100% {
+    width: 100%; } }
+
+p {
+  color: #707070;
+  font-family: ubuntu-light;
+  font-size: 20px;
+  width: 100%; }
+
+li {
+  color: #707070;
+  font-family: ubuntu-light;
+  font-size: 20px; }
+
+h2 {
+  color: #474747;
+  font-family: ubuntu-bold;
+  font-size: 30px; }
+
+article {
+  max-width: 855px;
+  position: absolute;
+  top: 0px;
+  left: 400px;
+  z-index: 0;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s; }
+
+section {
+  text-align: left;
+  -webkit-transition-duration: 0.5s;
+  -o-transition-duration: 0.5s;
+  transition-duration: 0.5s;
+  width: 90%;
+  height: 900px;
+  margin-left: 5px;
+  overflow-y: scroll; }
+
+.li-2 a:checked .section2 {
+  top: -30px; }
+
+span {
+  background-color: rgba(128, 128, 128, 0.226);
+  padding: 5px;
+  width: 100%; }
+
+@media (max-width: 922px) {
+  .container-nav {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    background-color: #EEEEEE;
+    width: 100%;
+    height: 300px;
+    text-align: center;
+    overflow-y: auto;
+    z-index: 999; }
+    .container-nav .h1 {
+      color: #474747;
+      font-family: ubuntu-bold;
+      font-size: 35px; }
+    .container-nav .nav {
+      width: 100%; }
+      .container-nav .nav .nav__ul {
+        list-style: none; }
+      .container-nav .nav .nav__li {
+        border: 3px solid #F18682;
+        position: relative;
+        left: -40px;
+        width: 100%;
+        padding: 17px;
+        z-index: 1; }
+        .container-nav .nav .nav__li:hover ::after {
+          position: absolute;
+          top: 0px;
+          left: 0px;
+          z-index: 1000;
+          content: " ";
+          background-image: -webkit-radial-gradient(rgba(241, 134, 130, 0.178), rgba(241, 134, 130, 0.158), rgba(241, 134, 130, 0.103));
+          background-image: -o-radial-gradient(rgba(241, 134, 130, 0.178), rgba(241, 134, 130, 0.158), rgba(241, 134, 130, 0.103));
+          background-image: radial-gradient(rgba(241, 134, 130, 0.178), rgba(241, 134, 130, 0.158), rgba(241, 134, 130, 0.103));
+          height: 100%;
+          width: 0;
+          -webkit-animation: flash 0.5s 1;
+          animation: flash 0.5s 1;
+          -webkit-animation-timing-function: cubic-bezier(0.175, 0.275, 0.3165, 1);
+          animation-timing-function: cubic-bezier(0.175, 0.275, 0.3165, 1);
+          -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards; }
+      .container-nav .nav .nav__a {
+        color: #707070;
+        font-size: 25px;
+        font-family: ubuntu;
+        text-decoration: none;
+        -webkit-transition-duration: 0.2s;
+        -o-transition-duration: 0.2s;
+        transition-duration: 0.2s; }
+        .container-nav .nav .nav__a:hover {
+          color: #1992ca; }
+  @-webkit-keyframes flash {
+    0% {
+      width: 0%; }
+    100% {
+      width: 100%; } }
+  @keyframes flash {
+    0% {
+      width: 0%; }
+    100% {
+      width: 100%; } }
+  p {
+    color: #707070;
+    font-family: ubuntu-light;
+    font-size: 20px;
+    width: 100%; }
+  li {
+    color: #707070;
+    font-family: ubuntu-light;
+    font-size: 20px; }
+  h2 {
+    color: #474747;
+    font-family: ubuntu-bold;
+    font-size: 30px; }
+  article {
+    width: 100%;
+    top: 300px;
+    left: 0px;
+    z-index: 0;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s; }
+  section {
+    text-align: left;
+    -webkit-transition-duration: 0.5s;
+    -o-transition-duration: 0.5s;
+    transition-duration: 0.5s;
+    width: 100%;
+    height: 900px;
+    margin-left: 5px; }
+  .li-2 a:checked .section2 {
+    top: -30px; }
+  span {
+    background-color: rgba(128, 128, 128, 0.226);
+    padding: 5px;
+    width: 100%; } }

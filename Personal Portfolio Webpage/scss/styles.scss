@@ -1,0 +1,120 @@
+@import "../../node_modules/bootstrap/scss/bootstrap.scss";
+@import url('https://fonts.googleapis.com/css?family=Raleway');
+@import "nav";
+
+body{
+    background-color: #141F28;
+}
+.invisibletext{
+    display: none;
+    text-align: center;
+}
+.container{
+    
+    margin-top: 50px;
+    background-color: #1F2F3E;
+    
+    .row{
+
+        .col-sm{
+            background-color: #1F2F3E;
+            width: 100%;
+            height: 700px;
+            margin-bottom: 120px;
+        }
+    }
+}
+
+.container-works{
+   overflow: auto;
+  
+    .row{
+        margin-top: 10px;
+        margin-right:auto;
+        margin-left: auto;
+        .works{
+
+            height: 770px;
+            margin-right:auto;
+        margin-left: auto;
+       
+        }
+    }
+}
+
+.container__footer{
+    margin-bottom: 20px;
+    margin-top: 50px;
+    background-color: #1F2F3E;
+    .row{
+
+        .col-sm{
+            background-color: #1F2F3E;
+            width: 100%;
+            height: 100px;
+        }
+    }
+
+}
+
+.networks{
+    margin-top: 30px;
+    float: right;
+}
+
+.presentation{
+    text-align: center;
+    margin-top: 250px;
+}
+h1{
+    color: rgb(182, 209, 218);
+    font-family: $letter;
+    font-size: 60px;
+    
+    position: relative;
+    left: 0px;
+    animation-name: hi;
+    animation-fill-mode: forwards;
+    animation-iteration-count: 1;
+    animation-duration: 0.5s;
+}
+
+/*Animation sheansuke span*/
+.span-sheansuke{
+    position: relative;
+    left:0px;
+    font-family: $letter;
+    color: rgb(182, 209, 218);
+    font-size: 40px;
+   
+}
+
+@mixin span-animation($i){
+    .span#{$i}{
+     animation-name: span-animation2;
+     animation-duration: $i+1 / 2+s;
+     animation-iteration-count: 1;
+     animation-fill-mode: forwards;
+     
+}
+}
+@for $i from 1 through 9 {
+   @include span-animation($i);
+  }
+    
+
+
+@keyframes hi{
+    from{left:1500px};
+    to{left:0px};
+}
+
+@keyframes span-animation2{
+    from{left:1500px};
+to{left:0px};
+}
+
+
+@media (max-width: 575.98px) { 
+    
+ }
